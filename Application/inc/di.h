@@ -31,9 +31,12 @@
 #define DI6_PIN     GPIO_Pin_1
 #define DI6_TIME    10
 
+#define SCAN_TIME   1    // 检测时间 单位-秒
+
 extern uint32_t time[];
 
 void DiInit(void);
+void DiReset(void);
 uint32_t DiScan(uint32_t *index);
 
 #endif

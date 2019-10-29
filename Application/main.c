@@ -22,6 +22,7 @@ int main(void)
         if (KeyTask() == kPressed) { // 按下复位键
             current_ticks = GetSysTick();
             host_time = 0;
+            DiReset();
             Uart1Send(11); // 发送11指令
         }
 
